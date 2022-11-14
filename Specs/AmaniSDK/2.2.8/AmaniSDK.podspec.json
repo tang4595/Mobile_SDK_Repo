@@ -25,9 +25,6 @@
     "OTHER_LDFLAGS": "-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
   },
   "dependencies": {
-    "IQKeyboardManagerSwift": [
-      "~> 6.5.0"
-    ],
     "lottie-ios": [
       "~> 3.3.0"
     ],
