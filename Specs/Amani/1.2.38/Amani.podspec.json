@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "lottie-ios": [
-      "~> 3.3.0"
+      "~> 3.5.0"
     ],
     "OpenSSL-Universal": [
       "1.1.1100"
