@@ -17,7 +17,7 @@
     "git": "https://github.com/AMANI-AI-ORG/IOS.SDK.UI.git",
     "tag": "1.0.0"
   },
-  "source_files": "AmaniUIv1/**/*.{h,m},**/*.{h,m}",
+  "source_files": "**/**/*.{h,m}",
   "resources":"AmaniUIv1/**/Assets/*.*",
   "documentation_url": "https://documentation.amani.ai",
   "platforms": {
