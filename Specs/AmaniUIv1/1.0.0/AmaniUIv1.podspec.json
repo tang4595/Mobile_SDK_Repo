@@ -25,7 +25,7 @@
     "AmaniUIv1/**/Assets/**/*.*"  ],
   "documentation_url": "https://documentation.amani.ai",
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
   "pod_target_xcconfig": {
     "OTHER_LDFLAGS": "-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
