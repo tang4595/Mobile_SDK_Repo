@@ -19,7 +19,7 @@
   },
   "source_files":[
     "**/*.{h,m,swift}",
-    "AmaniUIv1/**/*.{h,m,swift}"
+    "AmaniUIv1/**/*.{h,m,swift,xib}"
   ] ,
   "resources":[
     "AmaniUIv1/**/Assets/**/*.*"  ],
