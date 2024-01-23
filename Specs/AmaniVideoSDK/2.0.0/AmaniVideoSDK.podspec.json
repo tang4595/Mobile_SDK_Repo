@@ -1,0 +1,33 @@
+{
+  "name": "AmaniVideoSDK",
+  "version": "2.0.0",
+  "license": {
+    "type": "Copyright",
+    "text": "\t\t\t\t\t\t\t\t\t\t\t\t\t\tCopyright 2023\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tAmani Ai AŞ.\n"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "Amani-Video-SDK.",
+  "description": "The Amani Software Development kit (SDK) provides you complete steps to perform video call .",
+  "source": {
+    "http": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniVideoSDK/2.0.0/AmaniVideoSDK.xcframework.zip?raw=true"
+  },
+  "documentation_url": "https://documentation.amani.ai/documents/ios-video/",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "vendored_frameworks": "AmaniVideoSDK.xcframework",
+  "dependencies": {
+    "Socket.IO-Client-Swift": [
+      "~> 16.1.0"
+    ],
+    "WebRTC-lib":[
+      "~> 116.0.0"
+    ]
+  }
+}
+
