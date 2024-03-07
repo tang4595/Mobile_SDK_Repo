@@ -21,7 +21,8 @@
 	"2.3.5": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v2.3.5/AmaniSDK.xcframework.zip",
 	"2.3.6": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v2.3.6/AmaniSDK.xcframework.zip",
 	"2.3.7": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v2.3.7/AmaniSDK.xcframework.zip",
-  "3.0.0": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.0.0/AmaniSDK.xcframework.zip",
+	"2.4.0": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v2.4.0/AmaniSDK.xcframework.zip",
+	"3.0.0": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.0.0/AmaniSDK.xcframework.zip",
   "3.0.1": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.0.1/AmaniSDK.xcframework.zip",
   "3.1.0": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.1.0/AmaniSDK.xcframework.zip",
   "3.1.1": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.1.1/AmaniSDK.xcframework.zip",
@@ -32,5 +33,6 @@
   "3.3.1": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.1/AmaniSDK.xcframework.zip",  
   "3.3.2": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.2/AmaniSDK.xcframework.zip",
   "3.3.3": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.3/AmaniSDK.xcframework.zip",
-  "3.3.4": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.4/AmaniSDK.xcframework.zip"
+  "3.3.4": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.4/AmaniSDK.xcframework.zip",
+  "3.3.5": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/raw/main/Carthage/AmaniSDK/v3.3.5/AmaniSDK.xcframework.zip"
 }
