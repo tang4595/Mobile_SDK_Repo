@@ -1,0 +1,25 @@
+{
+  "name": "AmaniOpenSSL",
+  "version": "1.1.2000",
+  "license": {
+    "type": "Copyright",
+    "text": "\t\t\t\t\t\t\t\t\t\t\t\t\t\tCopyright 2022\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tAmani Ai AŞ.\n"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "OpenSSL for iOS and OS X",
+  "description": "OpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in macOS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports macOS, iOS, tvOS, visionOS including Simulator (armv7,armv7s,arm64,x86_64).",
+  "source": {
+    "http": "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniOpenSSL/v1.1.2000/OpenSSL.xcframework.zip?raw=true"
+  },
+  "documentation_url": "https://github.com/AmaniTechnologiesLtd/IOS_SDK_V2_Public",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "vendored_frameworks": "OpenSSL.xcframework"
+}
+
