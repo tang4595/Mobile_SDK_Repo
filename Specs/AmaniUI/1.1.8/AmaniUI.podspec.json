@@ -18,8 +18,8 @@
     "tag": "1.1.8"
   },
   "source_files":[
-    "**/*.{h,m,swift}",
-    "AmaniUI/**/*.{h,m,swift,xib}"
+    "**/*.{h,m,swift,xcprivacy}",
+    "AmaniUI/**/*.{h,m,swift,xib,xcprivacy}"
   ] ,
   "resources":[
     "AmaniUI/**/Assets/**/*.*"  
