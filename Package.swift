@@ -1,9 +1,12 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let CoreVersion = "3.4.1"
+let CoreVersion = "3.4.2"
+let CoreChecksum = "b1c6131aac5d2596141121b0abf11196ac95c7552d177e75d77c7ad94735b201"
+
 let UIVersion = "1.1.8"
 let VideoVersion = "2.0.1"
+let VideoCheckSum = "538fc22d952ee10496a8fce900969f55c992767483d487e0d2dd0a454b43e30d"
 
 let package = Package(
     name: "AmaniRepo",
@@ -54,12 +57,12 @@ let package = Package(
         .binaryTarget(
             name: "AmaniSDK",
             url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniSDK/v\(CoreVersion)/AmaniSDK.xcframework.zip?raw=true",
-            checksum: "b9ed75d9dd6183e8edd10f7f5e31be28936a299dac3dfd394ca0d7ada10e6977"
+            checksum: "\(CoreChecksum)"
         ),
         .binaryTarget(
             name: "AmaniVideoSDK",
             url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniVideoSDK/\(VideoVersion)/AmaniVideoSDK.xcframework.zip?raw=true",
-            checksum: "538fc22d952ee10496a8fce900969f55c992767483d487e0d2dd0a454b43e30d"
+            checksum: "\(VideoCheckSum)"
         ),
         .target(
             name: "AmaniVideoBundle",
