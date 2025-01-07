@@ -1,12 +1,27 @@
 // swift-tools-version:5.3
 import PackageDescription
+import Foundation
 
-let CoreVersion = "3.4.3"
-let CoreChecksum = "1e463fa7514d1351605499a5333b393f5aa1f10817e444253136e350e7e55ff4"
+struct versionInfo: Decodable {
+  let version: String
+  let checkSum: String
+}
 
-let UIVersion = "1.1.8"
-let VideoVersion = "2.0.1"
-let VideoCheckSum = "538fc22d952ee10496a8fce900969f55c992767483d487e0d2dd0a454b43e30d"
+var AmaniSDKConfig:versionInfo = versionInfo(version: "", checkSum: "")
+var AmaniVideoConfig:versionInfo = versionInfo(version: "", checkSum: "")
+var AmaniVoiceAssistantSDKConfig:versionInfo = versionInfo(version: "", checkSum: "")
+
+  let configFilePath = URL(fileURLWithPath: #file).deletingLastPathComponent()
+  
+  let AmaniSDKConfigData = try! Data(contentsOf: configFilePath.appendingPathComponent("VersionAmaniSDK.json"))
+  AmaniSDKConfig = try! JSONDecoder().decode(versionInfo.self, from: AmaniSDKConfigData)
+  
+  let AmaniVideoConfigData = try! Data(contentsOf: configFilePath.appendingPathComponent("VersionAmaniVideo.json"))
+  AmaniVideoConfig = try! JSONDecoder().decode(versionInfo.self, from: AmaniVideoConfigData)
+
+  let AmaniVoiceAssistantSDKConfigData = try! Data(contentsOf: configFilePath.appendingPathComponent("VersionAmaniVoiceAssistantSDK.json"))
+  AmaniVoiceAssistantSDKConfig = try! JSONDecoder().decode(versionInfo.self, from: AmaniVoiceAssistantSDKConfigData)
+
 
 let package = Package(
     name: "AmaniRepo",
@@ -22,6 +37,10 @@ let package = Package(
         .library(
             name:"AmaniVideoSDK",
             targets: ["AmaniVideoBundle"]
+        ),
+        .library(
+          name:"AmaniVoiceAssistantSDK",
+          targets: ["AmaniVoiceAssistantSDKBundle"]
         )
     ],
     dependencies: [
@@ -39,7 +58,7 @@ let package = Package(
             name:   "WebRTC",
             url: "https://github.com/stasel/WebRTC.git",
             .upToNextMinor(from: "127.0.0")
-        ),
+        )
     ],
     targets: [
         .target(
@@ -54,15 +73,23 @@ let package = Package(
               .linkedFramework("CryptoTokenKit"),
             ]
         ),
+        .target(
+          name: "AmaniVoiceAssistantSDKBundle",
+          dependencies: ["AmaniVoiceAssistantSDK"]
+        ),
+        .binaryTarget(
+          name: "AmaniVoiceAssistantSDK",
+          url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniVoiceAssistantSDK/\(AmaniVoiceAssistantSDKConfig.version)/AmaniVoiceAssistantSDK.xcframework.zip?raw=true",
+          checksum: "\(AmaniVoiceAssistantSDKConfig.checkSum)"),
         .binaryTarget(
             name: "AmaniSDK",
-            url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniSDK/v\(CoreVersion)/AmaniSDK.xcframework.zip?raw=true",
-            checksum: "\(CoreChecksum)"
+            url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniSDK/v\(AmaniSDKConfig.version)/AmaniSDK.xcframework.zip?raw=true",
+            checksum: "\(AmaniSDKConfig.checkSum)"
         ),
         .binaryTarget(
             name: "AmaniVideoSDK",
-            url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniVideoSDK/\(VideoVersion)/AmaniVideoSDK.xcframework.zip?raw=true",
-            checksum: "\(VideoCheckSum)"
+            url: "https://github.com/AmaniTechnologiesLtd/Public-IOS-SDK/blob/main/Carthage/AmaniVideoSDK/\(AmaniVideoConfig.version)/AmaniVideoSDK.xcframework.zip?raw=true",
+            checksum: "\(AmaniVideoConfig.checkSum)"
         ),
         .target(
             name: "AmaniVideoBundle",
@@ -71,7 +98,6 @@ let package = Package(
                     "SocketIO",
                     "WebRTC"
                 ]
-        ),    
+        )
     ]
 )
-
