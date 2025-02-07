@@ -1,0 +1,25 @@
+{
+  "name": "AmaniVoiceAssistantSDK",
+  "version": "1.0.1",
+  "license": {
+    "type": "Copyright",
+    "text": "\t\t\t\t\t\t\t\t\t\t\t\t\t\tCopyright 2023\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tAmani Ai AŞ.\n"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "Amani-VoiceAssistant-SDK.",
+  "description": "The Amani Voice Assistant Software Development kit (SDK) provides you complete steps to perform voice assistant .",
+  "source": {
+    "http": "https://github.com/AMANI-AI-ORG/AmaniVoiceAssistantSDK/raw/refs/tags/1.0.1/Binaries/AmaniVoiceAssistantSDK.xcframework.zip"
+  },
+  "documentation_url": "https://documentation.amani.ai/documents/voiceAssistant/AmaniVoiceAssistantIOS",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "vendored_frameworks": "AmaniVoiceAssistantSDK.xcframework"
+}
+
