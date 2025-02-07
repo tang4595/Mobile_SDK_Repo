@@ -20,6 +20,8 @@
   "platforms": {
     "ios": "13.0"
   },
-  "vendored_frameworks": "AmaniVoiceAssistantSDK.xcframework"
+  "vendored_frameworks": "AmaniVoiceAssistantSDK.xcframework",
+  "dependencies": {
+  }
 }
 
