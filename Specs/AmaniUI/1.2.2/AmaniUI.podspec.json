@@ -1,0 +1,41 @@
+{
+  "name": "AmaniUI",
+  "version": "1.2.2",
+  "license": {
+    "type": "Copyright",
+    "text": "\t\t\t\t\t\t\t\t\t\t\t\t\t\tCopyright 2022\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tAmani Ai AŞ.\n"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "homepage": "http://www.amani.ai/",
+  "authors": {
+    "Amani Ai": "admin@amani.ai"
+  },
+  "summary": "Amani-SDK v3 interface looks like v1.",
+  "description": "The Amani Software Development kit (SDK) provides you complete steps to perform eKYC. This package gaves you ui for v1 on v3 sdk",
+  "source": {
+    "git": "https://github.com/AMANI-AI-ORG/IOS.SDK.UI.git",
+    "tag": "1.2.2"
+  },
+  "source_files":[
+    "Sources/**/*.{h,m,swift,xcprivacy}",
+    "Sources/AmaniUI/**/*.{h,m,swift,xib,xcprivacy}"
+  ] ,
+  "resource_bundles":{ "AmaniUI": "Sources/AmaniUI/*/*.{xib,storyboard,xcassets,xcprivacy}" },
+  "documentation_url": "https://documentation.amani.ai",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
+  },
+  "dependencies": {
+    "lottie-ios": [
+        "~>4.5"
+    ],
+    "AmaniSDK": [
+      "~> 3.4.5"
+    ]
+  }
+}
+
