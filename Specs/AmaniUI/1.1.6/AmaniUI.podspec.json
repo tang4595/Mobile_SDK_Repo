@@ -32,9 +32,6 @@
     "OTHER_LDFLAGS": "-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
   },
   "dependencies": {
-    "OpenSSL-Universal": [
-      "~> 1.1.1100"
-    ],
     "lottie-ios": [
         "3.5.0"
     ],
