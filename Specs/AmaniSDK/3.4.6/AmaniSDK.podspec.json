@@ -25,7 +25,7 @@
     "OTHER_LDFLAGS": "-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit"
   },
   "dependencies": {
-    "OpenSSL-Universal": [
+    "GMOpenSSL": [
       
     ]
   }
